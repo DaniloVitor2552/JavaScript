@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>
+            Moeda
+        </title>
+    </head>
+    <style>
+       
+       body{
+           background-image: url(./img/dolar.jpg);
+           background-size: cover;
+       }
+
+        #area_moeda{
+            width: 700px;
+            height: 700px;
+            background-color: dodgerblue;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .caixas_valores{
+            width: 300px;
+            height: 150px;
+            background-color: greenyellow;
+            margin-bottom: 50px; 
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        select{
+            width: 150px;
+            margin-bottom: 20px;
+        }
+
+        input{
+            width: 150px;
+
+        }
+
+        button{
+            width: 75px;
+            height: 20px;
+        }
+
+    </style>
+
+    <body>
+        <div id="area_moeda">
+            <div class="caixas_valores">
+                <h1>Valor em Real:</h1>
+
+                <select type="select" name="sltvalor1">
+                        <option name="opDolar" value="dolar">Dolar</option>
+                        <option name="opEuro" value="euro">Euro</option>
+                        <option name="opLibra" value="libra">Libras</option>
+                        <option name="opPeso" value="peso">Peso</option>
+                        <option name="opReal" value="real">Real</option>
+                </select>
+                
+                 <input type="text" id="valor">
+
+                 <button type="submit" name="btnConverter" value="btnconverte">
+                    Converter
+                </button>
+            </div>
+
+            <div class="caixas_valores">
+                <h1>Para:</h1>
+
+                <select type="select" name="sltvalor2">
+                        <option name="opDolar" value="dolar">Dolar</option>
+                        <option name="opEuro" value="euro">Euro</option>
+                        <option name="opLibra" value="libra">Libras</option>
+                        <option name="opPeso" value="peso">Peso</option>
+                        <option name="opReal" value="real">Real</option>
+                </select>
+                <br>
+                <input type="text" id="convertido">
+            </div>
+            
+        </div>
+
+    <script src="./js/moeda.js"></script>
+    </body>
+
+</html>

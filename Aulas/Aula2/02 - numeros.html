@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Aprendendo mais sobre funções</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <script src="numerros.js"></script>
+    <style>
+            *{
+                margin: 5px;
+            }
+            header{
+                text-align: center;
+            }
+            section{
+                margin-left: auto;
+                margin-right: auto;
+                width: 20vw;
+                text-align: center;
+                padding: 15px;
+                background: #c4d2f2;
+                box-shadow:3px 3px 5px #000000;
+            }
+            .entrada {
+                display: grid;
+                 grid-template-columns: 1fr 1fr;
+            }
+
+            .entrada input  {
+                width: 100%;
+            }
+    </style>    
+    </head>
+    <body>
+        <header>
+            <h1>Aprendendo sobre funções</h1>
+        </header>
+        <section>
+            <div class="entrada">
+               <label>
+                     Valor Mínimo:
+                     <input type="text" id="minimo"/> 
+               </label>
+               <label>
+                     Valor Máximo:
+                     <input type="text" id='maximo'/>
+               </label>           
+            </div>
+            <div class="action">
+               
+               <input type="button" value="Pares" id='pares'/> 
+               <input type="button" value="Fatorial" id='fatorial'/> 
+               <input type="button" value="Fibonacci" id='fibonacci'/>
+               <input type="button" value="Primo" id='primo'/>
+            </div>
+            <textarea id="resultado" rows="10" ></textarea>
+        </section>
+        
+    </body>
+</html>
